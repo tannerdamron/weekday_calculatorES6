@@ -34,21 +34,30 @@ export default class Date {
     this.countDays = 0;
   }
 
+
   getWeekday(countDays) {
+    // Practicing template literals //
+    let monday = "Monday";
+    let tuesday = "Tuesday";
+    let wednesday = "Wednesday";
+    let thursday = "Thursday";
+    let friday = "Friday";
+    let saturday = "Saturday";
+    let sunday = "Sunday";
     if (countDays % 7 === 1) {
-      return "Monday";
+      return `The day of the week was ${monday}`;
     } else if (countDays % 7 === 2) {
-      return "Tuesday";
+      return `The day of the week was ${tuesday}`;
     } else if (countDays % 7 === 3) {
-      return "Wednesday";
+      return `The day of the week was ${wednesday}`;
     } else if (countDays % 7 === 4) {
-      return "Thursday";
+      return `The day of the week was ${thursday}`;
     } else if (countDays % 7 === 5) {
-      return "Friday";
+      return `The day of the week was ${friday}`;
     } else if (countDays % 7 === 6) {
-      return "Saturday";
+      return `The day of the week was ${saturday}`;
     } else {
-      return "Sunday";
+      return `The day of the week was ${sunday}`;
     }
   }
 }
